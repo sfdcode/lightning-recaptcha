@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <iframe src="/apex/sfdcode_recaptcha" height="74px" style="border:0px"/>
+
+    <br/>
+    <lightning:button aura:id="myButton" label="Submit" onclick="{!c.doSubmit}" disabled="true" />    
+</aura:component>
